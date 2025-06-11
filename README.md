@@ -10,6 +10,7 @@ A replacement for clothing resources for various frameworks
 <img src="https://i.ibb.co/0pbm1Rt8/Ekran-g-r-nt-s-2025-06-11-211612.png" alt="" />
 
 Discord: https://discord.gg/bitline
+Tebex: https://bitline.tebex.io
 
 **Note:** Do **NOT** use the `main` branch as it will most likely be broken for you. NO SUPPORT WILL BE PROVIDED IF YOU USE IT. Only use the [latest release](https://github.com/iLLeniumStudios/illenium-appearance/releases/latest)
 
