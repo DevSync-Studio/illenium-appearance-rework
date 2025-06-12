@@ -34,7 +34,6 @@ const customStyles: any = {
   control: (styles: any, { isFocused }: any) => ({
     ...styles,
     background: 'linear-gradient(145deg, rgba(15, 23, 42, 0.6) 0%, rgba(30, 41, 59, 0.4) 100%)',
-    backdropFilter: 'blur(10px)',
     fontSize: '14px',
     color: '#f8fafc',
     border: `1px solid ${isFocused ? 'rgba(37, 99, 235, 0.5)' : 'rgba(51, 65, 85, 0.3)'}`,
@@ -84,10 +83,8 @@ const customStyles: any = {
   menu: (styles: any) => ({
     ...styles,
     background: 'linear-gradient(145deg, rgba(15, 23, 42, 0.95) 0%, rgba(30, 41, 59, 0.9) 100%)',
-    backdropFilter: 'blur(20px)',
     border: '1px solid rgba(51, 65, 85, 0.3)',
     borderRadius: '12px',
-    boxShadow: '0 10px 25px -5px rgba(0, 0, 0, 0.25)',
     marginTop: '4px',
   }),
   menuList: (styles: any) => ({
