@@ -2,7 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 import { Theme } from './theme';
 
 export default createGlobalStyle<{theme: Theme}>`
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
   
   * {
     margin: 0;
@@ -17,7 +17,7 @@ export default createGlobalStyle<{theme: Theme}>`
   
   body {
     background: transparent;
-    font-family: ${props => props.theme.typography.fontFamily};
+    font-family: ${props => props.theme.typography.fontFamily}, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     font-size: ${props => props.theme.typography.fontSize.base};
     line-height: ${props => props.theme.typography.lineHeight.normal};
     color: ${props => props.theme.colors.text.primary};

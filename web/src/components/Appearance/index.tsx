@@ -2,7 +2,6 @@ import { useState, useEffect, useCallback, useMemo } from 'react';
 import { useTransition as useTransitionAnimation, animated } from 'react-spring';
 import { useNuiState } from '../../hooks/nuiState';
 import Nui from '../../Nui';
-import mock from '../../mock';
 
 import {
   CustomizationConfig,
@@ -39,36 +38,6 @@ import Tattoos from './Tattoos';
 
 import { Wrapper, Container } from './styles';
 import { ThemeContext } from 'styled-components';
-
-if (!import.meta.env.PROD) {
-  mock('appearance_get_settings', () => ({
-    appearanceSettings: {
-      ...SETTINGS_INITIAL_STATE,
-      eyeColor: { min: 0, max: 24 },
-      hair: {
-        ...SETTINGS_INITIAL_STATE.hair,
-        color: {
-          items: [
-            [255, 0, 0],
-            [0, 255, 0],
-            [0, 0, 255],
-            [0, 0, 255],
-          ],
-        },
-      },
-    },
-  }));
-
-  mock('appearance_get_data', () => ({
-    appearanceData: { ...APPEARANCE_INITIAL_STATE, model: 'mp_f_freemode_01' },
-  }));
-
-  mock('appearance_change_model', () => SETTINGS_INITIAL_STATE);
-
-  mock('appearance_change_component', () => SETTINGS_INITIAL_STATE.components);
-
-  mock('appearance_change_prop', () => SETTINGS_INITIAL_STATE.props);
-}
 
 const Appearance = () => {
   const [config, setConfig] = useState<CustomizationConfig>();
